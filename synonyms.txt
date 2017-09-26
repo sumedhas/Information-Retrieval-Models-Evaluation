@@ -1,0 +1,50 @@
+# The ASF licenses this file to You under the Apache License, Version 2.0
+# (the "License"); you may not use this file except in compliance with
+# the License.  You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+#-----------------------------------------------------------------------
+#some test synonym mappings unlikely to appear in real input text
+ASYL-FLÜCHTLING => ASYLUM REFUGEES
+
+Airbnb, Instacart, Kickstarter => U.S Tech Companies, U.S Tech Firms
+Umfragen => plunges in polls, decrease in polls
+
+Deutschland begrüßt Flüchtlinge => Germany welcomes refugees
+coordinate => co-ordinate
+путин бьет обаму => Putin beats Obama
+убит полицией => killed by police, von der Polizei getötet
+Flüchtlingskrise => refugee crisis
+тунисских => Tunisian
+Syrian civil war => Bürgerkrieg, гражданская война
+путин бьет обаму => Putin beats Obama
+Thomas Maizière => Thomas Maiziere 
+
+РФ в Сирии вынудили 250 тунисских боевиков бежать => Russland in Syrien gezwungen, die 250 tunesischen Kämpfer fliehen, Russia in Syria forced the 250 Tunisian militants flee
+Бильд. Внутренний документ говорит, что Германия примет 1,5 млн беженцев в этом году => Bild. An internal document says that Germany will take 1.5 million refugees this year, Bild. Ein internes Dokument sagt, dass Deutschland 1,5 Millionen Flüchtlinge in diesem Jahr stattfinden wird
+Russische Botschaft in Syrien von Granaten getroffen => встретил посольство России в Сирии гранат, met Russian Embassy in Syria of grenades
+ASYL-FLÜCHTLING bedankt sich per Video-Botschaft bei Til Schweiger => ASYLUM REFUGEES thanked by video message at Til Schweiger, ИЩУЩИЕ БЕЖЕНЦЫ отблагодарил видеообращении на Тиль Швайгер
+
+
+# Some synonym groups specific to this example
+GB,gib,gigabyte,gigabytes
+
+MB,mib,megabyte,megabytes
+Television, Televisions, TV, TVs
+US,U.S.,USA,U.S.A.,usa,U.S,us
+Aris Messinis, @ArisMessinis
+@washingtonpost ,  washingtonpost,  washington post
+Merkel, Angela Merkel
+#notice we use "gib" instead of "GiB" so any WordDelimiterFilter coming
+#after us won't split it into two words.
+
+# Synonym mappings can be used for spelling correction too
+pixima => pixma
+
